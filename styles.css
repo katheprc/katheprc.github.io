@@ -1,6 +1,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 992px) {
-  #particles-js, .principal {
+  #particles-js,
+  .principal {
     display: none;
   }
 
@@ -10,11 +11,20 @@
     display: flex;
   }
 
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
   .navbar-brand {
-    display: inline-block;
     color: black;
     padding: 7px;
-    background: linear-gradient(159deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: linear-gradient(
+      159deg,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline #cba7ff wavy;
@@ -31,9 +41,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
   }
 
-  .mobile-items-view{
+  .mobile-items-view {
     height: fit-content;
     margin-top: 50px;
     justify-content: center;
@@ -42,19 +55,23 @@
 
   /* glowing hover card made by: csozi | Website: english.csozi.hu*/
 
-.card {
+  .card {
     position: absolute;
     width: 190px;
     height: 254px;
     background: rgb(255, 0, 179);
-    background: linear-gradient(137deg, rgb(255, 0, 179) 0%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(
+      137deg,
+      rgb(255, 0, 179) 0%,
+      rgba(0, 212, 255, 1) 100%
+    );
     transition: 0.3s ease;
     border-radius: 30px;
     filter: drop-shadow(0px 0px 30px rgba(209, 38, 197, 0.5));
   }
-  
+
   .card::after {
-    content: '';
+    content: "";
     background-color: #181818;
     position: absolute;
     z-index: 1;
@@ -65,7 +82,7 @@
     left: 1%;
     border-radius: 28px;
   }
-  
+
   .mobile-items-view img {
     position: absolute;
     z-index: 2;
@@ -73,10 +90,9 @@
     height: auto;
     width: 150px;
     border-radius: 20%;
-
   }
 
-  .mobile-items-view p{
+  .mobile-items-view p {
     position: absolute;
     z-index: 2;
     color: white;
@@ -92,7 +108,7 @@
     margin-top: 300px;
     justify-content: center;
   }
-  
+
   .card-social svg {
     position: absolute;
     display: flex;
@@ -105,8 +121,9 @@
     z-index: 2;
     cursor: pointer;
   }
-  
-  .card-social .social-link2,.card-social .social-link4 {
+
+  .card-social .social-link2,
+  .card-social .social-link4 {
     position: relative;
     display: flex;
     align-items: center;
@@ -118,41 +135,38 @@
     transition: 0.25s;
     border-radius: 50px;
   }
-  
+
   .card-social svg {
     transform: scale(1);
   }
-
 
   .card-social .social-link2:hover {
     background-color: #242c34;
     animation: bounce_613 0.4s linear;
   }
-  
+
   .card-social .social-link4:hover {
     background-color: #0a66c2;
     animation: bounce_613 0.4s linear;
   }
 
-  
   @keyframes bounce_613 {
     40% {
       transform: scale(1.4);
     }
-  
+
     60% {
       transform: scale(0.8);
     }
-  
+
     80% {
       transform: scale(1.2);
     }
-  
+
     100% {
       transform: scale(1);
     }
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -161,7 +175,8 @@
     display: initial;
   }
 
-  header, .mobile-items-view {
+  header,
+  .mobile-items-view {
     display: none;
     visibility: hidden;
   }
@@ -187,7 +202,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    
+
     background-image: url("assets/bg.jpg");
     background-position: center;
     background-size: cover;
